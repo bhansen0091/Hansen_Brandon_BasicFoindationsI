@@ -258,20 +258,32 @@ console.log(test);
 
  //13
 
+// var testArr = [-1,-3,2];
+// function negToString(arr) {
+//     var newArr = [];
+//     for (var i = 0; i < arr.length; i++) {
+//         if (arr[i] < 0) {
+//             arr[i] = "Dojo";
+//             newArr.push(arr[i]);
+//         }
+//         else{
+//             newArr.push(arr[i]);
+//         }
+//     }
+//     return newArr;
+// }
+
+// var test = negToString(testArr);
+// console.log(test);
+
 var testArr = [-1,-3,2];
 function negToString(arr) {
-    var newArr = [];
     for (var i = 0; i < arr.length; i++) {
         if (arr[i] < 0) {
             arr[i] = "Dojo";
-            newArr.push(arr[i]);
-        }
-        else{
-            newArr.push(arr[i]);
         }
     }
-    return newArr;
+    return arr;
 }
 
-var test = negToString(testArr);
-console.log(test);
+console.log(negToString(testArr));
